@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaiTH02</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Bài 1 -->
+
+<h3 class="name">Bài 1</h3>
+<div class="bai1">
+    <div class="bai1-container">
+        <h1 class="b1-heading">Giải phương trình bậc nhất</h1>
+         <form action="" class="bai1-form">
+            <input type="number" name="number-a" id="numb-a" placeholder="Hệ số a">
+            <input type="number" name="number-b" id="numb-b" placeholder="Hệ số b">
+            <input type="button" value="Giải phương trình" onclick="bai1()">   
+         </form>
+         <h4>KẾT QUẢ</h4>
+        <div id="" > 
+            <span id="ketqua"></span>
+        </div>
+    </div>
+</div>
+
+<!--Bài 2 -->
+<h3 class="name">Bài 2</h3>
+<div class="bai2">
+    <div class="bai2-container">
+        <div class="bai2-textcontainer">
+            <h1 class="bai2-text">ĐÓNG GÓP Ý KIẾN VỀ SẢN PHẨM</h1>
+            <p class="bai2-para">Góp ý của bạn sẽ được chúng tôi xem xét, vui lòng nhập tiếng việt có dấu</p>
+            <p class="bai2-para">Các ý kiến đóng nên viết chi tiết rõ ràng, kèm theo các minh chứng xác thực thời gian và địa điểm <i>(nếu có)</i></p>
+        </div>
+        <form action="" class="bai2-form">
+            <div class="bai2-form-container">
+                <input type="text" name="ten" id="bai2-name" placeholder="Họ và tên" class="bai2-input">
+                <input type="text" name="card" id="bai2-card" placeholder="Mã thẻ">
+                <input type="text" name="phone" id="bai2-sdt" placeholder="Số điện thoại" class="bai2-input">
+                <input type="email" name="email" id="bai2-email" placeholder="Email">
+                <select type="text" name="option" id="input-customer-type" class="bai2-input" required>
+                    <option value="">Chọn loại khách hàng</option>
+                    <option value="vip">VIP</option>
+                    <option value="regular">Regular</option>
+                    <option value="new">New</option>
+                </select>
+                <input type="text" name="invoice" id="bai2-invoice" placeholder="Mã hóa đơn">
+            </div>
+            <textarea id="input-description" class="bai2-textarea" class="bai2-input" placeholder="Nhập chi tiết mô" required></textarea>    
+        </form>
+        <button class="bt-bai2" type="submit" onclick="bai2()" >Gửi góp ý <img src="https://cdn-icons-png.flaticon.com/128/134/134837.png" class="icon-message" alt=""></button>
+    </div>
+</div>
+
+<!--Bài 3 -->
+<h3 class="name">Bài 3</h3>
+<h1 class="bai3-first-heading">LIÊN HỆ</h1>
+<div class="line"></div>
+<div class="bai3-body">
+    <div class="bai3-info">
+        <p class="bai3-heading1">Thông tin</p>
+        <li> <img src="https://cdn-icons-png.flaticon.com/128/149/149441.png" class="bai3-img" alt=""> Kp 6, P. Linh Trung, TP. Thủ Đức, TP. HCM</li>
+        <li> <img src="https://cdn-icons-png.flaticon.com/128/134/134867.png" class="bai3-img" alt=""> info@uit.edu.vn</li>
+        <li> <img src="https://cdn-icons-png.flaticon.com/128/134/134845.png" class="bai3-img" alt=""> +84 28 372 52002</li>
+    </div>
+    <div class="bai3-form">
+        <p class="bai3-heading2">
+            Hãy liên lạc với chúng tôi bất cứ khi nào!!!
+        </p>
+      <form action="" class="bai3-formcontainer">
+        <input type="text" name="name" id="bai3-name" class="bai3-input" placeholder="Họ và tên" >
+        <input type="email" name="email" id="bai3-email" class="bai3-input" placeholder="Địa chỉ e-mail">
+        <input type="text" name="title" id="bai3-title" class="bai3-input" placeholder="Tiêu đề bài viết">
+        <textarea id="bai3-input-description" class="bai3-input" placeholder="Nội dung cần gửi" required></textarea>  
+      </form>
+      <button class="bt-bai3" type="submit" onclick="bai3()" >Gửi tin nhắn <img src="https://cdn-icons-png.flaticon.com/128/134/134808.png" class="icon-message" alt=""> </button>
+    </div>
+</div>
+
+<!--Bài 4 -->
+<h3 class="name">Bài 4</h3>
+<div class="bai4">
+    <div class="bai4-container">
+        <div class="bai4-heading">
+            TÍNH CHỈ SỐ BMI
+        </div>
+        <form action="" class="bai4-form">
+            <div class="weight">
+                <label for="weight">Nhập cân nặng?</label><br>
+                <input type="text" name="weight" id="weight">
+            </div>
+            <div class="height">
+                <label for="height">Nhập chiều cao?</label><br>
+                <input type="text" name="height" id="height">
+            </div>
+            <div class="bai4-option">
+                <label for="option">Chọn loại tuổi?</label><br>
+                <select name="" id="bai4-select" class="bai3-select">
+                    <option value="" id="bai4-0">Chọn</option>
+                    <option value="0"  id="bai4-1">Trung niên</option>
+                    <option value="1"  id="bai4-2">Trung niên , già lớn tuổi</option>
+                    <option value="2" id="bai4-3">Già , lớn tuổi</option>
+               </select>
+            </div>
+            <input type="button" value="Tính BMI" class="bai4-button" onclick="bai4()">
+        </form>
+        <div class="ketqua">
+            KẾT QUẢ
+            <div id="bai4-number"></div>
+            <div id="categories"></div>
+            <div id="message"></div>
+        </div>
+    </div>
+</div>
+
+<!--Bài 5 -->
+<h3 class="name">Bài 5</h3>
+<div class="bai5">
+    <div class="bai5-container">
+        <h2 class="bai5-heading"> <img src="https://cdn-icons-png.flaticon.com/512/149/149383.png" class="bai5-icon" alt="">Login</h2>
+        <form action="" >
+            <input type="text" class="bai5-text" placeholder="Tên Tài Khoản"><br>
+            <input type="password" name="" id="bai5-password" class="bai5-text" placeholder="Mật khẩu">
+            <input type="button" value= "🔒" class="bai5-button" onclick="bai5()">
+        </form>      
+    </div>
+</div>
+
+<!--Bài 6 -->
+<h3 class="name">Bài 6</h3>
+<div class="bai6">
+    <div class="bai6-container">
+        <h1>Log In</h1>
+        <p>Login here using your username and password</p>
+        <form action="" class="bai6-form">
+            <input type="text" id="bai6-username" class="bai6-input" placeholder="👤   UserName"><br>
+            <input type="password" id="bai6-password" class="bai6-input" placeholder="🔑   Password">
+        </form>
+        <button class="bt-bai6" type="submit">Log In</button>
+        <div class="bai6-button">
+            <span class="bai6-button1">
+                Fogot Password
+            </span>
+            <span class="bai6-button2">
+                Sign Up 👥
+            </span>
+        </div>
+    </div>
+</div>
+
+    <script src="index.js"></script>
+</body>
+</html>
