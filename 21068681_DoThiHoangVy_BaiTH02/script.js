@@ -3,7 +3,6 @@ function bai1(){
     const numbB = document.getElementById("numb-b").value;
     const result = document.getElementById("ketqua")
     result.innerHTML = (numbB/numbA)*-1;
-
 }
 
 function bai2(){
@@ -15,9 +14,7 @@ function bai2(){
     const mathe = document.getElementById("bai2-card").value;   
     const invoiceid = document.getElementById("bai2-invoice").value;
     const textarea = document.getElementById("input-description").value;
-    window.alert("Họ và tên" +name +"\n Mã thẻ:" + mathe +"\n Số điện thoại:"+ phone +"Email:" +email +"\n 123"+"\n Loại KH" +optionText +"\n Nội dung góp ý "+ textarea
-    );
-
+    window.alert("Họ và tên" +name +"\n Mã thẻ:" + mathe +"\n Số điện thoại:"+ phone +"Email:" +email +"\n 123"+"\n Loại KH" +optionText +"\n Nội dung góp ý "+ textarea);
 }
 
 function bai3(){
@@ -26,8 +23,7 @@ const email = document.getElementById("bai3-email").value;
 const title = document.getElementById("bai3-title").value;
 const textarea = document.getElementById("bai3-input-description").value;
 const confirmBox = confirm(
-    "Họ và tên" +hoten +"Email:" +email  +"\n Nội dung góp ý "+ textarea
-);
+    "Họ và tên" +hoten +"Email:" +email  +"\n Nội dung góp ý "+ textarea);
 }
 
 function bai4(){
